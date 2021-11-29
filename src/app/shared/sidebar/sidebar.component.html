@@ -1,0 +1,16 @@
+<div class="bg-dark border-end p-3" id="sidebar">
+  <img src="http://assets.stickpng.com/images/5847ea22cef1014c0b5e4833.png" 
+    style="display: block; width: 9rem; margin-left: auto; margin-right: auto; margin-top: 1rem; margin-bottom: 1rem;" 
+    alt="Angular_icon"
+  >
+  <h3 class="text-light text-center">Gifs-App-Angular 12</h3>
+  <hr class="text-white" />
+  <div class="list-group list-reset">
+    <a *ngFor="let h of historial"
+        (click)="buscar( h )"
+        href="#" 
+        class="list-group-item list-group-item-action animate__animated animate__bounce">
+          {{ h | titlecase }}
+    </a>
+  </div>
+</div>
